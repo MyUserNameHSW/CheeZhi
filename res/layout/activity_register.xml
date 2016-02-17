@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity" >
+
+    <RelativeLayout
+        android:id="@+id/top_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/login_btn_bcg_press" >
+
+        <ImageView
+            android:id="@+id/arg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/lyy_top_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/register_name_en"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_register"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/phoneNum_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_backgroung1"
+            android:hint="@string/input_phoneNum"
+            android:inputType="phone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/sendMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:background="@drawable/btn_login_bg_press"
+                android:textColor="@color/white"
+                android:text="@string/send_message" />
+
+            <EditText
+                android:id="@+id/validate_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="@string/input_yanzheng"
+                android:background="@drawable/edit_text_backgroung1"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_val"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_btn_selector"
+            android:text="@string/next_step" 
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</RelativeLayout>

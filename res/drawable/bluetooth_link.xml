@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:drawable="@drawable/wai1"
+        android:duration="300"/>
+    <item
+        android:drawable="@drawable/wai2"
+        android:duration="300"/>
+    <item
+        android:drawable="@drawable/wai3"
+        android:duration="300"/>
+
+</animation-list>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/link_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ProgressBar
+            android:id="@+id/pro_img"
+            android:layout_width="206dp"
+            android:layout_height="206dp"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/bluetooth_link" />
+
+        <TextView
+            android:id="@+id/text_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/buletooth_pro"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cancel_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/small_btn_selector"
+            android:clickable="true"
+            android:text="@string/cancel_blue"
+            android:textColor="@color/login_btn_bcg_press"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/wai3_img"
+            android:layout_width="206dp"
+            android:layout_height="206dp"
+            android:layout_gravity="center"
+            android:src="@drawable/wai3" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/alredy_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alredy_link"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/linking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cut_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/small_btn_selector1"
+                android:clickable="true"
+                android:text="@string/cut_link"
+                android:textColor="@color/red2"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/joinin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/small_btn_selector"
+                android:clickable="true"
+                android:text="@string/join"
+                android:textColor="@color/login_btn_bcg_press"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

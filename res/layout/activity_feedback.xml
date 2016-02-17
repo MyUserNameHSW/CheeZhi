@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedbackActivity" >
+
+    <RelativeLayout
+        android:id="@+id/top_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/login_btn_bcg_press" >
+
+        <ImageView
+            android:id="@+id/afb_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/lyy_top_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/feedback_en"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_feedback"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_en"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/contact_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/edit_text_backgroung"
+                android:hint="@string/enterPhone_en" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/add_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_backgroung"
+            android:enabled="true"
+            android:gravity="top"
+            android:hint="@string/sendMessage_en"
+            android:inputType="textMultiLine"
+            android:maxLines="7"
+            android:minLines="5"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_btn_selector"
+            android:text="@string/confirm_en"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

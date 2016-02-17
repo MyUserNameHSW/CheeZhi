@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetCodeActivity" >
+
+    <RelativeLayout
+        android:id="@+id/top_setcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/login_btn_bcg_press" >
+
+        <ImageView
+            android:id="@+id/asc_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/lyy_top_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/setcode_en"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <com.cheezhi.views.CircleImageView
+        android:id="@+id/user_headimg"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/top_setcode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/menu_bcg_img" />
+
+    <LinearLayout
+        android:id="@+id/input_con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_headimg"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/edit_top_backgroung1"
+            android:hint="@string/inputname"
+            android:maxLength="16"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/first_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_mid_backgroung1"
+            android:hint="@string/setcode"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/second_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-0.5dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_bottom_backgroung1"
+            android:hint="@string/confirm_code"
+            android:maxLength="16"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/submit_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_btn_selector"
+            android:text="@string/confirm_en"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

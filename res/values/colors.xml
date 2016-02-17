@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="TextColorGray">#ffBEBFC0</color>
+    <color name="white_alpha_one">#2fffffff</color>
+    <color name="white_alpha_three">#9fffffff</color>
+    <color name="white_alpha_two">#0fffffff</color>
+    <color name="gray1_alpha">#2f978B7B</color>
+    <color name="gray1_hint">#8f978B7B</color>
+    <color name="login_btn_bcg">#ff76bfc3</color>
+    <color name="login_btn_bcg_press">#ff5db0b5</color>
+    <color name="background">#EDEDED</color>
+    <color name="ColorGray">#5fBEBFC0</color>
+    <color name="gray">#565656</color>
+    <color name="gray_text">#848484</color>
+    <color name="gray_text2">#828282</color>
+    <color name="red2">#8c6872</color>
+</resources>

@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".UserInfoActivity" >
+
+    <LinearLayout
+        android:id="@+id/lin_top1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/bg1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <com.cheezhi.views.CircleImageView
+            android:id="@+id/user_head"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/menu_bcg_img" />
+
+        <TextView
+            android:id="@+id/username_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/username_info"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/userinfo_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/small_back" />
+
+    <LinearLayout
+        android:id="@+id/lin_top2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin_top1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lin1_bg"
+        android:orientation="vertical"
+        android:padding="6dp" >
+
+        <TextView
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/user_btn_selector"
+            android:clickable="true"
+            android:drawableLeft="@drawable/username111"
+            android:drawableRight="@drawable/info_delita"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="修改用户名" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DBDBDB" />
+
+        <TextView
+            android:id="@+id/edit_user_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/user_btn_selector"
+            android:clickable="true"
+            android:drawableLeft="@drawable/password1111"
+            android:drawableRight="@drawable/info_delita"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="修改密码" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DBDBDB" />
+
+        <TextView
+            android:id="@+id/edit_user_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/user_btn_selector"
+            android:clickable="true"
+            android:drawableLeft="@drawable/user_phone"
+            android:drawableRight="@drawable/info_delita"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="修改绑定手机" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_top3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin_top2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lin1_bg"
+        android:orientation="vertical"
+        android:padding="6dp" >
+
+        <TextView
+            android:id="@+id/edit_aboutus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/user_btn_selector"
+            android:clickable="true"
+            android:drawableLeft="@drawable/username111"
+            android:drawableRight="@drawable/info_delita"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="关于我们" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DBDBDB" />
+
+        <TextView
+            android:id="@+id/edit_messageback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/user_btn_selector"
+            android:clickable="true"
+            android:drawableLeft="@drawable/password1111"
+            android:drawableRight="@drawable/info_delita"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="意见反馈" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/edit_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/login_btn_selector"
+        android:text="退出登录" />
+
+</RelativeLayout>
